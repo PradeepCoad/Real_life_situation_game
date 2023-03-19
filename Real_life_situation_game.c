@@ -19,9 +19,9 @@ void main()
 
    loading_animation();
 
-  // getch();
+   rectangle(0,0,xmax,ymax);
 
-  //story_1();
+   story_1();
 
 
 
@@ -67,12 +67,12 @@ void story_1()
 
 }
 void loading_animation()
-{
+{   int xmax = getmaxx();
     int x = 0,y = 0;
     int hexagonPoints[] = {260,150,360,150,410,210,410,290,360,350,260,350,210,290,210,210,260,150};
 
     delay(100);
-
+    setcolor(3);
     for(x=260;x<=360;x++){
     delay(5);
     line(260,150,x,150);
@@ -86,7 +86,7 @@ void loading_animation()
     }
 
     delay(100);
-
+     setcolor(5);
     for(y = 210;y<=290;y++){
     delay(5);
     line(410,210,410,y);
@@ -100,7 +100,7 @@ void loading_animation()
     }
 
     delay(100);
-
+     setcolor(9);
     for(x=360;x>=260;x--){
     delay(5);
     line(360,350,x,350);
@@ -114,7 +114,7 @@ void loading_animation()
     }
 
     delay(100);
-
+    setcolor(12);
     for(y=290;y>=210;y--){
     delay(5);
     line(210,290,210,y);
@@ -126,12 +126,31 @@ void loading_animation()
     delay(5);
     line(210,210,x,y);
     }
-  delay(100);
-  fillpoly(9,hexagonPoints);
 
+    setcolor(10);
+    settextstyle(0,0,2);
+    delay(100);
 
+    outtextxy(240,240,"LOADING...");
 
+    setcolor(15);
 
+    for(x =20;x<=xmax-20;x++){
+       delay(10);
+       bar(20,400,x,410);
+
+       if(x == xmax-20)
+       {
+	 delay(2000);
+	 cleardevice();
+	 rectangle(0,0,getmaxx(),getmaxy());
+	 setcolor(14);
+	 outtextxy(140,240,"Press Enter to START -->");
+	 setcolor(15);
+       }
+    }
+     getch();
+     cleardevice();
 
 }
 
