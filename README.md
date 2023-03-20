@@ -37,7 +37,7 @@ In this project we are using C language.
 <br/>
 
 
-# How to Run 🏃‍♂️ the Program :
+# How to Run 🏃‍♂️ Program :
  
 <p>
    <ul>
