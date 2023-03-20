@@ -52,7 +52,17 @@ In this project we are using C language.
   </ul>
 </p>
 
+<br/>
 
+# How to UPDATE downloaded/copy file :
+
+<p>
+   <ul>
+       <li>Same as you run program by pasting from download/copy file to BIN FOLDER .</li>
+       <li>COPY from BIN to your clone folder then commit it.</li>
+   </ul>
+
+</p>
 <br/>
 
 ## 🪁Some more things :
