@@ -30,6 +30,8 @@ void main()
    closegraph();
 }
 
+//River for Map 1
+
 void river_of_map1()
 {  int xmax,ymax;
 
@@ -51,6 +53,8 @@ void river_of_map1()
 
 }
 
+//Map 1
+
 
 void map1()
 {
@@ -61,11 +65,19 @@ void map1()
   river_of_map1();
 
 }
+
+//Story 1
+
 void story_1()
 {
   map1();
 
 }
+
+
+//Loadin Animation
+
+
 void loading_animation()
 {   int xmax = getmaxx();
     int x = 0,y = 0;
