@@ -30,6 +30,8 @@ void main()
    closegraph();
 }
 
+//River For map 1
+
 void river_of_map1()
 {  int xmax,ymax;
 
