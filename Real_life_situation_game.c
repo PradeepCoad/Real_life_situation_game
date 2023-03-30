@@ -37,6 +37,13 @@ void main()
    closegraph();
 }
 
+<<<<<<< HEAD
+=======
+//River For map 1
+
+void river_of_map1()
+{  int xmax,ymax;
+>>>>>>> 33cf9689d08ad4a3f2f504e425acf58c5fbea0b4
 
 //--------storyes--------//
 void story_1()
